@@ -23,7 +23,7 @@ public class Votalandia {
         LoginForm login = new LoginForm();
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         login.setLocation(dim.width/2-login.getSize().width/2, dim.height/2-login.getSize().height/2);
-        login.setVisible(true);
+        login.setVisible(true); //nuevo cambio
         
     }
     
