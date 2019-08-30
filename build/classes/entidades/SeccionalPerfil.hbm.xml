@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 5/06/2018 12:02:43 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entidades.SeccionalPerfil" table="SECCIONAL_PERFIL" catalog="tukuulsc_vota" optimistic-lock="version">
+        <id name="idSeccionalPerfil" type="java.lang.Integer">
+            <column name="ID_SECCIONAL_PERFIL" />
+            <generator class="identity" />
+        </id>
+        <property name="idPerfil" type="int">
+            <column name="ID_PERFIL" not-null="true" />
+        </property>
+        <property name="idSeccional" type="int">
+            <column name="ID_SECCIONAL" not-null="true" />
+        </property>
+        <property name="idUsuario" type="int">
+            <column name="ID_USUARIO" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

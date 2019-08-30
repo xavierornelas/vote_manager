@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 5/06/2018 12:02:43 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entidades.TipoVotacion" table="TIPO_VOTACION" catalog="tukuulsc_vota" optimistic-lock="version">
+        <id name="idTipoVotacion" type="java.lang.Integer">
+            <column name="ID_TIPO_VOTACION" />
+            <generator class="identity" />
+        </id>
+        <property name="tipoVotacion" type="string">
+            <column name="TIPO_VOTACION" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

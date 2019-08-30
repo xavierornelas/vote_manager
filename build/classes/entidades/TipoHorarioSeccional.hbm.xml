@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 5/06/2018 12:02:43 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entidades.TipoHorarioSeccional" table="TIPO_HORARIO_SECCIONAL" catalog="tukuulsc_vota" optimistic-lock="version">
+        <id name="idTipoHorarioSeccional" type="java.lang.Integer">
+            <column name="ID_TIPO_HORARIO_SECCIONAL" />
+            <generator class="identity" />
+        </id>
+        <property name="tipoHorarioSeccional" type="string">
+            <column name="TIPO_HORARIO_SECCIONAL" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

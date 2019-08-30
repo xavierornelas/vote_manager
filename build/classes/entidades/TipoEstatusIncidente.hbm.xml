@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 5/06/2018 12:02:43 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entidades.TipoEstatusIncidente" table="TIPO_ESTATUS_INCIDENTE" catalog="tukuulsc_vota" optimistic-lock="version">
+        <id name="idTipoEstatusIncidente" type="int">
+            <column name="ID_TIPO_ESTATUS_INCIDENTE" />
+            <generator class="assigned" />
+        </id>
+        <property name="tipoEstatusIncidente" type="string">
+            <column name="TIPO_ESTATUS_INCIDENTE" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
